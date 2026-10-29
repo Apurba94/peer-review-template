@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peer-review-template"
+version = "0.1.0"
+description = "Generate structured peer-review reports from a guided questionnaire."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+peer-review-template = "peer_review_template.cli:main"
+
+[tool.setuptools]
+packages = ["peer_review_template"]
